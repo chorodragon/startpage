@@ -1,0 +1,71 @@
+body {
+    background-image: url("background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+input {
+    padding: 8px 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding:0px;
+}
+
+li {
+    padding-top: 5px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    background-color: #5e7bae;
+    padding: 5px 5px;
+}
+
+#title{
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    position: fixed;
+}
+
+#welcomeMessage {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+#timeTitle {
+    margin-top: 0px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.center_s {
+    margin: 0;
+	position: fixed;
+	top: 60%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.linksBlocks {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 30px;
+}
+
+.jap_titleBlocks {
+    font-size: 30px;
+}
+
+.eng_titleBlocks {
+    font-size: 10px;
+}
