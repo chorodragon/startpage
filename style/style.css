@@ -21,8 +21,12 @@ li {
 ul a {
     text-decoration: none;
     color: black;
-    background-color: #5e7bae;
     padding: 10px 5px;
+    font-size: 10px;
+}
+
+ul a:hover {
+    font-size: 15px;
 }
 
 #title{
@@ -66,6 +70,7 @@ ul a {
 }
 
 .linksBlocks {
+    background-color: #5e7bae;
     width: 200px;
     text-align: center;
     display: none;
