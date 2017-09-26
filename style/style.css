@@ -53,14 +53,26 @@ ul a {
     height: 50%;
 }
 
-.linksBlocks {
-    display: inline-block;
-    width: 200px;
-    flex: left;
+.buttonMenu {
     text-align: center;
-    padding: 10px 20px;
-    margin: auto;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
 }
+
+.buttonMenu:hover .linksBlocks {
+    display: block;
+}
+
+.linksBlocks {
+    width: 200px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
 
 .jap_titleBlocks {
     font-size: 30px;
