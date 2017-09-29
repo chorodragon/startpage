@@ -22,11 +22,12 @@ ul a {
     text-decoration: none;
     color: black;
     padding: 10px 5px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 ul a:hover {
     font-size: 15px;
+    text-shadow: 0px 0px 10px #ff0000;
 }
 
 #title{
@@ -70,7 +71,6 @@ ul a:hover {
 }
 
 .linksBlocks {
-    background-color: #5e7bae;
     width: 200px;
     text-align: center;
     display: none;
