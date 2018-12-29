@@ -1,48 +1,56 @@
 body {
     background-size: 100%;
+    font-size: 15px;
 }
 
 input {
     padding: 8px 10px;
+    border-radius: 50px;
 }
+
 
 ul {
-    list-style-type: none;
-    margin: 0px;
-    padding:0px;
+    list-style: none;
 }
 
-li {
-    padding-top: 10px;
-}
-
-ul a {
+a {
     text-decoration: none;
-    color: black;
-    padding: 10px 5px;
-    font-size: 12px;
-}
-
-ul a:hover {
-    font-size: 15px;
-    text-shadow: 0px 0px 10px #ff0000;
-}
-
-#title{
-    margin: auto;
-    width: 500px;
-    text-align: center;
-}
-
-#welcomeMessage {
-    font-size: 40px;
-    margin-bottom: 0px;
+    color: rgb(240, 240, 240);
+    font-size: 1em;
+    padding: 0px 1em;
+    text-shadow: 0px 0px 1em black;
 }
 
 #timeTitle {
-    margin-top: 0px;
-    font-size: 15px;
-    font-style: italic;
+    font-size: 1.5em;
+}
+
+#welcomeMessage {
+    font-size: 2em;
+}
+
+#linkPackages {
+    text-align: left;
+}
+
+#linkPackages ul li {
+    padding: 0.2em;
+}
+
+#linkPackages ul{
+    display: inline-block;
+}
+
+#linkPackages ul li ul li{
+    display: inline-block;
+}
+
+.jap_title {
+    display: inline-block;
+    width: 7em;
+    height: 1.1em;
+    border-right: solid black 0.1em;
+    font-size: 1.5em;
 }
 
 .center_s {
@@ -52,35 +60,9 @@ ul a:hover {
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-    width: 100%;
+    width: 50%;
     height: 50%;
-}
-
-.buttonMenu {
-    text-align: center;
-    width: 200px;
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-}
-
-.buttonMenu:hover .linksBlocks {
-    display: block;
-}
-
-.linksBlocks {
-    width: 200px;
-    text-align: center;
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-
-.jap_titleBlocks {
-    font-size: 30px;
-}
-
-.eng_titleBlocks {
-    font-size: 10px;
+    background-color: rgba(0, 162, 255, 0.863);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px black;
 }

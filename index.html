@@ -11,7 +11,7 @@
         }
     </style>
     <script type="text/javascript" src="script/script.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   <!--- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
 </head>
 <body>
     <div class="center_s" id="center">
@@ -20,33 +20,26 @@
             <p id="timeTitle"></p>
             <form action="https://www.google.com.gt/search?" target="_blank">
                 <input type="text" size="50" name=q autofocus placeholder="Enter search terms here" style="margin-bottom: 5px;">
-                <input type="submit" value="Search">
             </form>
         </div>
         
-        <div class="buttonMenu">
-            <span class="jap_titleBlocks">アニメ</span><br>
-            <span class="eng_titleBlocks">Anime</span>
-            
-            <div class="linksBlocks">
+        <div id="linkPackages">
+            <ul>
+                <li>
+                    <span class="jap_title" title="Anime">アニメ</span>
+                    <ul>
+                        <li><a href="https://boards.4chan.org/a/" target="_blank">/a/</a></li>
+                        <li><a href="https://bakabt.me/" target="_blank">BakaBT</a></li>
+                        <li><a href="https://animetorrents.me/" target="_blank">AnimeTorrents</a></li>
+                        <li><a href="http://horriblesubs.info/" target="_blank">HorribleSubs</a></li>
+                        <li><a href="https://nyaa.si/" target="_blank">Nyaa</a></li>
+                        <li><a href="https://myanimelist.net/" target="_blank">MAL</a></li>
+                        <li><a href="https://nibl.co.uk/bots.php">Nibl</a></li>
+                    </ul>
+                </li>
                 <hr>
-                <ul>
-                    <li><a href="https://boards.4chan.org/a/" target="_blank">/a/</a></li>
-                    <li><a href="https://bakabt.me/" target="_blank">BakaBT</a></li>
-                    <li><a href="https://animetorrents.me/" target="_blank">AnimeTorrents</a></li>
-                    <li><a href="http://horriblesubs.info/" target="_blank">HorribleSubs</a></li>
-                    <li><a href="https://nyaa.si/" target="_blank">Nyaa</a></li>
-                    <li><a href="https://myanimelist.net/" target="_blank">MAL</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="buttonMenu">
-            <span class="jap_titleBlocks">学習</span><br>
-            <span class="eng_titleBlocks">Learning</span>
-        
-            <div class="linksBlocks">
-                    <hr>
+                <li>
+                    <span class="jap_title" title="Learning">学習</span>
                     <ul>
                         <li><a href="http://www.umg.edu.gt/" target="_blank">University</a></li>
                         <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank">MIT Courses</a></li>
@@ -54,56 +47,43 @@
                         <li><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
                         <li><a href="http://www.learncpp.com/" target="_blank">LearnCPP</a></li>
                         <li><a href="https://www.codewars.com/dashboard" target="_blank">CodeWars</a></li>
-			<li><a href="https://djtguide.neocities.org/" target="_blank">You can (not) learn japanese</a></li>
                     </ul>
-            </div>        
-        </div>
-
-        <div class="buttonMenu">
-            <span class="jap_titleBlocks">ソーシャル</span><br>
-            <span class="eng_titleBlocks">Social and Mail</span>
-
-            <div class="linksBlocks">
+                </li>
                 <hr>
-                <ul>
-                    <li><a href="https://boards.4chan.org/g/" target="_blank">/g/</a></li>
-                    <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
-                    <li><a href="https://github.com/" target="_blank">Github</a></li>
-                    <li><a href="https://mail.protonmail.com/" target="_blank">ProtonMail</a></li>
-                    <li><a href="https://mail.google.com/mail/u/0/" target="_blank">Gmail</a></li>
-                    <li><a href="https://mail.cock.li/" target="_blank">CockMail</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="buttonMenu">
-            <span class="jap_titleBlocks">ダウンロード</span><br>
-            <span class="eng_titleBlocks">Downloads</span>
-
-            <div class="linksBlocks">
+                <li>
+                    <span class="jap_title" title="Social and Mail">ソーシャル</span>
+                    <ul>
+                        <li><a href="https://boards.4chan.org/g/" target="_blank">/g/</a></li>
+                        <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
+                        <li><a href="https://github.com/" target="_blank">Github</a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/" target="_blank">Gmail</a></li>
+                        <li><a href="https://mail.cock.li/" target="_blank">CockMail</a></li>
+                        <li><a href="http://anidb.net">AniDB</a></li>
+                        <li><a href="http://www.mangaupdates.com/mylist.html">BakaUpdates</a></li>
+                    </ul>
+                </li>
                 <hr>
-                <ul>
-                    <li><a href="https://manga.madokami.al/" target="_blank">Madokami</a></li>
-                    <li><a href="http://mikudb.moe/" target="_blank">MikuDB</a></li>
-                    <li><a href="http://hikarinoakariost.info/" target="_blank">Hikari no Akari</a></li>
-                    <li><a href="http://erogedownload.com/" target="_blank">Eroge Download</a></li>
-                    <li><a href="http://fitgirl-repacks.site/" target="_blank">FitGirl</a></li>
-                </ul>
-            </div>
-        </div>
-
-	<div class="buttonMenu">
-            <span class="jap_titleBlocks">ストリーム</span><br>
-            <span class="eng_titleBlocks">Streams</span>
-
-            <div class="linksBlocks">
+                <li>
+                    <span class="jap_title" title="Downloads">ダウンロード</span>
+                    <ul>
+                        <li><a href="https://manga.madokami.al/" target="_blank">Madokami</a></li>
+                        <li><a href="http://mikudb.moe/" target="_blank">MikuDB</a></li>
+                        <li><a href="http://hikarinoakariost.info/" target="_blank">Hikari no Akari</a></li>
+                        <li><a href="http://erogedownload.com/" target="_blank">Eroge Download</a></li>
+                        <li><a href="http://fitgirl-repacks.site/" target="_blank">FitGirl</a></li>
+                        <li><a href="https://temporussanimes.blogspot.com/">Temporuss</a></li>
+                    </ul>
+                </li>
                 <hr>
-                <ul>
-                    <li><a href="https://listen.moe/" target="_blank">Listen.moe</a></li>
-                    <li><a href="https://www.twitch.tv/" target="_blank">Twitch</a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-                </ul>
-            </div>
+                <li>
+                    <span class="jap_title" title="Streams and Media">メディア</span>
+                    <ul>
+                        <li><a href="https://listen.moe/" target="_blank">Listen.moe</a></li>
+                        <li><a href="https://www.twitch.tv/" target="_blank">Twitch</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
