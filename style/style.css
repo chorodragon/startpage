@@ -58,7 +58,7 @@ a {
     position: absolute;
     top: 40%;
     left: 50%;
-    padding: auto;
+    padding: 0 2% 0 0;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 162, 255, 0.863);
     border-radius: 20px;
