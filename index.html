@@ -1,74 +1,74 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Startpage</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <script>
-         let sites = {
-             "media": [
-                 {"name": "Twitch", "url": "https://www.twitch.tv/"},
-                 {"name": "Youtube", "url": "https://www.youtube.com/"},
-                 {"name": "Listen.moe", "url": "https://www.listen.moe"}
-             ],
-             "social": [
-                 {"name": "Reddit", "url": "https://www.reddit.com"},
-                 {"name": "MAL", "url": "https://myanimelist.net"},
-                 {"name": "Reddit", "url": "https://mail.google.com/"},
-                 {"name": "/g/", "url": "https://boards.4chan.org/g/"},
-                 {"name": "BakaUpdates", "url": "www.mangaupdates.com/mylist.html"}
-             ],
-             "learning": [
-                 {"name": "TYCS", "url": "https://teachyourselfcs.com/"},
-                 {"name": "MIT", "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/"},
-                 {"name": "W3S", "url": "https://www.w3schools.com/"},
-                 {"name": "CodeWars", "url": "https://www.codewars.com/"}
-             ],
-             "downloads": [
-                 {"name": "Madokami", "url": "https://manga.madokami.al/"},
-                 {"name": "BakaBT", "url": "https://bakabt.me"},
-                 {"name": "AnimeTorrents", "url": "https://animetorrents.me"},
-                 {"name": "HorribleSubs", "url": "https://horriblesubs.info/"},
-                 {"name": "Nyaa", "url": "https://nyaa.si"}
-             ]
-         };
-             
-             window.onload = function(){
-                 for (category in sites){
-                     categoryList = document.querySelector("."+category);
-                     sitesList = sites[category];
-                     let htmlElement = "<ul>";
-                     htmlElement += "<span class='lamda'>λ</span><span class='terminal'>~</span>";
-                     for (site in sitesList){
-                         htmlElement += "<a href='" + sitesList[site].url + "' target='_blank'>";
-                         htmlElement += "<span class='siteTitle'>" + sitesList[site]['name'] + "</span>";
-                         htmlElement += "</a>";
-                     }
-                     htmlElement += "</ul>";
-                     categoryList.innerHTML = htmlElement;
-                 }
-             };
-        </script>
-    </head>
-    <body>
-        <div class="header">
-            <span class="greeting">こんにちは</span>
-        </div>
-        <div class="container">
-            <ul>
-                <li class="item media">
-                </li>
-                <br/>
-                <li class="item social">
-                </li>
-                <br/>
-                <li class="item learning">
-                </li>
-                <br/>
-                <li class="item downloads">
-                </li>
-            </ul>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Startpage</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script>
+      let sites = {
+        "media": [
+          {"name": "Twitch", "url": "https://www.twitch.tv/"},
+          {"name": "Youtube", "url": "https://www.youtube.com/"},
+          {"name": "Listen.moe", "url": "https://www.listen.moe"}
+        ],
+        "social": [
+          {"name": "Reddit", "url": "https://www.reddit.com"},
+          {"name": "MAL", "url": "https://myanimelist.net"},
+          {"name": "Reddit", "url": "https://mail.google.com/"},
+          {"name": "/g/", "url": "https://boards.4chan.org/g/"},
+          {"name": "BakaUpdates", "url": "www.mangaupdates.com/mylist.html"}
+        ],
+        "learning": [
+          {"name": "TYCS", "url": "https://teachyourselfcs.com/"},
+          {"name": "MIT", "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/"},
+          {"name": "W3S", "url": "https://www.w3schools.com/"},
+          {"name": "Leetcode", "url": "https://leetcode.com/"}
+        ],
+        "downloads": [
+          {"name": "Madokami", "url": "https://manga.madokami.al/"},
+          {"name": "BakaBT", "url": "https://bakabt.me"},
+          {"name": "AnimeTorrents", "url": "https://animetorrents.me"},
+          {"name": "HorribleSubs", "url": "https://horriblesubs.info/"},
+          {"name": "Nyaa", "url": "https://nyaa.si"}
+        ]
+      };
+
+window.onload = function(){
+  for (category in sites){
+    categoryList = document.querySelector("."+category);
+    sitesList = sites[category];
+    let htmlElement = "<ul>";
+    htmlElement += "<span class='lamda'>λ</span><span class='terminal'>~</span>";
+    for (site in sitesList){
+      htmlElement += "<a href='" + sitesList[site].url + "' target='_blank'>";
+      htmlElement += "<span class='siteTitle'>" + sitesList[site]['name'] + "</span>";
+      htmlElement += "</a>";
+    }
+    htmlElement += "</ul>";
+    categoryList.innerHTML = htmlElement;
+  }
+};
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <span class="greeting">こんにちは</span>
+    </div>
+    <div class="container">
+      <ul>
+        <li class="item media">
+        </li>
+        <br/>
+        <li class="item social">
+        </li>
+        <br/>
+        <li class="item learning">
+        </li>
+        <br/>
+        <li class="item downloads">
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
